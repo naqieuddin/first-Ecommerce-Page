@@ -7,8 +7,15 @@
 }
 
 body{
-    margin: 24px 350px 0;
+    margin: 24px 350px;
     
+}
+
+@media (max-width: 1024px){
+    body{
+    margin: 24px 30px 0;
+        
+    }
 }
 
 nav{
@@ -25,6 +32,8 @@ nav{
 }
 
 
+
+
 .logo{
     display: flex;
     align-items: center;
@@ -35,11 +44,30 @@ nav{
     color: aliceblue;
 }
 
+@media (max-width: 1024px){
+    .logo{
+        font-size: 18px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
 
+}
 .link a{
     text-decoration: none;
     color: aliceblue;
     margin-right: 30px;
+}
+
+.link a:hover{
+    color: #F4CE47;
+
+}
+
+@media (max-width: 1024px){
+    .link a{
+        margin-right: 2px;
+
+    }
 }
 
 .login{
@@ -59,6 +87,11 @@ nav{
     margin-left: 10px;
     color: white;
 }
+
+.icon a:hover{
+    color: #F4CE47 ;
+}
+
 
 .login-button a{
     height: 50px;
@@ -165,6 +198,12 @@ nav{
     
 }
 
+.browse-button a:hover{
+    letter-spacing: 0.2em;
+    transition: 0.6s;
+    width: 25%;
+}
+
 .icon-background{
     position: absolute;
     font-size: 450px;
@@ -244,6 +283,11 @@ nav{
     text-decoration: none;
     color: #2A2C2E;
     
+}
+
+.gridbox7 a:hover{
+    letter-spacing: 0.2em;
+    transition: 0.6s;
 }
 
 .poster{
@@ -489,6 +533,11 @@ nav{
     color: black;
 }
 
+.author-last a:hover{
+    letter-spacing: 0.2em;
+    transition: 0.6s;
+}
+
 .discount{
     display: flex;
     justify-content: center;
@@ -582,6 +631,11 @@ nav{
     margin-left: 20px;
 }
 
+.apps-list a:hover{
+    color: var(--clr);
+    transition: 0.4s;
+}
+
 .last-box{
     background-color: black;
     height: 40px;
@@ -595,7 +649,13 @@ nav{
     justify-content: space-between;
 }
 
-.right-side, .left-side{
+.right-side , .left-side {
     display: flex;
     gap: 20px;
+}
+
+.right-side a, .left-side a{
+    color: white;
+    text-decoration: none;
+
 }
